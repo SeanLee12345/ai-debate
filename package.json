@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0",
+    "socket.io": "^4.6.1"
+  },
+  "name": "ai-debate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Real-time opposing-side debate rooms with an OpenAI claim-evaluation integration point",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "check": "node --check server.js && node --check public/code.js"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  }
+}

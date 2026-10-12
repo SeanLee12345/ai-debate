@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title></title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+    <body>
+        <div class = "left">
+                <div class = "screen register">
+                    
+                </div>
+                <div class = "screen join-screen active">
+                    
+                </div>
+                <div class="screen choose">
+                    
+                </div>
+                <div class = "screen chat-screen">
+                    <h2 id = "otherpf"></h2>
+                    <p id = "otherside"></p>
+                    <p id = "otherwin"></p>
+                    <p id = "otherty"></p>
+                </div>
+                <div class="screen win-screen">
+                    
+                </div>
+        </div>
+        <div class = "middle">
+            <div class = "app">
+                <div class = "screen register">
+                    <div class="mregister">  
+                        <h2 id = "register-header" style = "background-color: white;">Create an Account</h2>
+                        <div class="register-input">
+                            <span style = "background-color: white;">Username</span>
+                            <br>
+                            <input id = "creuser" style = "background-color: white;">
+                            <span id = "psrq" style = "background-color: white;">Password</span>
+                            <br>
+                            <input type = "password" id = "password" style = "background-color: white;">
+                            <span style = "background-color: white;">Type Password Again</span>
+                            <br>
+                            <input type = "password" id = "password-check" style = "background-color: white;">
+                            <span id = "blink">&nbsp;</span>
+                            <br>
+                            <button id = "btojoin">Back</button>
+                            <button id = "register" style="float: right;">Register</button>
+
+                        </div>
+                    </div>
+                </div> 
+                <div class = "screen join-screen active">
+                    <div class = "form">
+                        <h2 style = "background-color: white;">Join Chat</h2>
+                        <div class="form-input">
+                            <span style = "background-color: white;">Username</span>
+                            <br>
+                            <input type = "text" id = "username" style = "background-color: white;">
+                            <span style = "background-color: white;">Password</span>
+                            <br>
+                            <input type = "password" id = "password_match" style = "background-color: white;">                        
+                            <span id = "blink2">&nbsp;</span>
+                            <br>
+                            <button id ="join-user">Join</button>
+                            <br><br>
+                            <span style = "background-color: white;">If you do not have an account</span>
+                            <br>
+                            <button id = "to-register">Create an Account</button>
+                            <button id = "win"> Click to win</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen choose">
+                    <div class = "mchoose">
+                        <h2 style = "background-color: white;">Pick a side</h2>
+                        <br>
+                        <button id = "capitalism">Capitalism</button>
+                        <button id = "socialism">Socialism</button>
+                        <br>
+                        <br>
+                        <button id = "choose_side">Join</button>
+                    </div>
+                    
+                </div>
+                <div class = "screen chat-screen">
+                    <div class="header">
+                        <div class="logo">Chatroom</div>
+                        <p style = "color:white" id = "title">Capitalism V.S. Socialism</p>
+                        <button id ="exit-chat">Exit</button>
+                    </div>
+                    <div class="messages">
+                    </div>
+                    <div class="typebox">
+                        <input type = "text" id ="message-input">
+                        <button id = "send-message">Send</button>
+                    </div>
+                </div>
+                <div class="screen win-screen">
+                    <div class="choose">
+                        <h2>You Win</h2>
+                        <br>
+                        <button id = "rematch">Rematch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "right">
+                <div class = "screen register">
+                    
+                </div>
+                <div class = "screen join-screen active">
+                    
+                </div>
+                <div class="screen choose">
+                    
+                </div>
+                <div class = "screen chat-screen">
+                    <h2 id = "yourpf"></h2>
+                    <p id = "yourside"></p>
+                    <p id = "yourwin"></p>
+                    <p id = "yourty"></p>
+                </div>
+                <div class="screen win-screen">
+                    
+                </div>
+        </div>
+        <script type = "text/javascript" src = "socket.io/socket.io.js"></script>
+        <script type = "text/javascript" src = "code.js"></script>
+    </body>
+</html>
